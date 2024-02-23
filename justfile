@@ -5,3 +5,9 @@ install-k3s:
 
 install-cilium:
     bash scripts/cilium-install.sh
+
+uninstall:
+    bash scripts/uninstall.sh
+
+rotate:
+    bash scripts/rotate.sh
