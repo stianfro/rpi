@@ -19,7 +19,7 @@ cilium install --version 1.15.1 \
                --set=k8sServicePort=6443 \
                --set=hubble.enabled=true \
                --set=hubble.ui.enabled=true \
-               --set=hubble.relay.enabled=true 
+               --set=hubble.relay.enabled=true
 
-kubectl apply -f cilium/
+# kubectl apply -f cilium/
 
