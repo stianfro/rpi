@@ -6,9 +6,9 @@ if [ -z "${SERVER_IP}" ]; then
     exit 1
 fi
 
-k3sup install --ip $SERVER_IP \
+k3sup install --ip "${SERVER_IP}" \
               --user stianfroystein \
-              --local-path "~/.kube/config.d/rpi" \
+              --local-path "${HOME}/.kube/config.d/rpi" \
               --context "rpi" \
               --k3s-extra-args="--flannel-backend=none --disable-network-policy --disable=traefik --disable-kube-proxy --disable=servicelb"
 
