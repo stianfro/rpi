@@ -1,0 +1,4 @@
+resources:
+- hubble.yaml
+- ippool.yaml
+- l2policy.yaml

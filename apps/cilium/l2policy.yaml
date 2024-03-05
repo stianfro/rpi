@@ -4,7 +4,7 @@ metadata:
   name: policy
 spec:
   interfaces:
-  - ^eth[0-9]+
+  # - ^eth[0-9]+
+  - enp89s0
   externalIPs: true
   loadBalancerIPs: true
-
