@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: network-tool
+spec:
+  selector:
+    matchLabels:
+      app: network-tool
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: network-tool
+    spec:
+      containers:
+        - name: network-tool
+          image: docker.io/stianfro/network-tool
+          imagePullPolicy: Always
+          resources:
+            limits:
+              cpu: "100m"
+              memory: "512Mi"
