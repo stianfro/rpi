@@ -1,8 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: gitops-system
-  namespace: openshift-gitops
+  name: apps-appset
+  namespace: argocd
 spec:
   syncPolicy:
     automated:
