@@ -15,7 +15,7 @@ cilium install --version 1.15.1 \
                --set=l2announcements.enabled=true \
                --set=externalIPs.enabled=true \
                --set=kubeProxyReplacement=true \
-               --set=k8sServiceHost=${SERVER_IP} \
+               --set=k8sServiceHost="${SERVER_IP}" \
                --set=k8sServicePort=6443 \
                --set=hubble.enabled=true \
                --set=hubble.ui.enabled=true \

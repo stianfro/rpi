@@ -5,5 +5,5 @@ if [ -z "${SERVER_IP}" ]; then
     exit 1
 fi
 
-ssh $SERVER_IP 'sudo openvt -s -- bpytop; echo 1 | sudo tee /sys/class/graphics/fbcon/rotate'
+ssh "${SERVER_IP}" 'sudo openvt -s -- bpytop; echo 1 | sudo tee /sys/class/graphics/fbcon/rotate'
 

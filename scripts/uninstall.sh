@@ -5,5 +5,5 @@ if [ -z "${SERVER_IP}" ]; then
     exit 1
 fi
 
-ssh $SERVER_IP 'sudo /usr/local/bin/k3s-uninstall.sh'
+ssh "${SERVER_IP}" 'sudo /usr/local/bin/k3s-uninstall.sh'
 
