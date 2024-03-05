@@ -6,6 +6,9 @@ install-k3s:
 install-cilium:
     bash scripts/cilium-install.sh
 
+install-argo:
+    bash scripts/argo-install.sh
+
 uninstall:
     bash scripts/uninstall.sh
 
