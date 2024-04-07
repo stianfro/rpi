@@ -5,7 +5,5 @@ metadata:
 spec:
   interfaces:
   - wlan0
-  - eth0
-  - enp89s0
   externalIPs: true
   loadBalancerIPs: true
