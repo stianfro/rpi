@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: hubble-ui-lb
   namespace: kube-system
+  annotations:
+    "lbipam.cilium.io/ips": "192.168.1.220"
 spec:
   ports:
   - name: http
@@ -12,3 +14,4 @@ spec:
   selector:
     k8s-app: hubble-ui
   type: LoadBalancer
+  loadBalancerIP: "192.168.1.220"

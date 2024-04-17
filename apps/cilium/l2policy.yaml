@@ -3,7 +3,7 @@ kind: CiliumL2AnnouncementPolicy
 metadata:
   name: policy
 spec:
-  interfaces:
-  - wlan0
+  # interfaces:
+  # - wlan0
   externalIPs: true
   loadBalancerIPs: true
